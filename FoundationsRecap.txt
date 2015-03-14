@@ -1,0 +1,28 @@
+Intro to VCS and Git
+
+What is a version control system?
+- A system to help manage different versions of your work
+- Allows you to save your work each time you make a change so that if something goes wrong you can roll-back to an earlier version.
+- If you use a remote repository it is also a way to back up your work.
+- Allows you to work on new features separately from your main application until you are ready to merge your changes.
+- Allows you to collaborate with others because everyone can work on code separately on their own machines and then merge changes when they are ready.
+
+How do you create a remote repository?
+- A remote repository is just a repository that is in a different place than your local repository.
+- To add a remote to your repository, use git add remote [remote name] [remote location]
+- If you want to create a remote on GitHub, first create the remote on the GitHub website, then use git add remote locally to add the GitHub location as your remote.  Then you can push changes from your local repository to the remote on GitHub
+
+What is the process of cloning and forking? What is the difference?
+- Cloning is when you make a local copy of a repository
+- Forking is when you make a copy of a repository on GitHub that you want to work on.  You can then clone your fork to your local machine.
+- The differences:
+	- forking is only used on GitHub
+	- with forking, your copy is still related to the original repository so the original author gets credit
+	- if you want to push changes to the orinal repository that you forked, you have to submit a pull request to the owner.  Instead of pushing your changes, they can pull them if they want to
+	- When you clone you can push changes to your remote repository without a pull request because you own both of them
+
+What is the staging area and how do you add files to it?
+- The staging area is the place in your repository where you put files you want to commit.
+- You can commit everything at once without using the staging area, but if you only want to commit changes from some files you add them to the staging area
+- When you run git commit without any arguments, only the files that are in the stagin area will be committed
+- To add a file to the staging area, use git add [file name]
